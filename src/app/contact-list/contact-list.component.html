@@ -1,0 +1,8 @@
+<div>
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Search Contacts" />
+  <ul>
+    <li *ngFor="let contact of filterContacts()">
+      <a [routerLink]="['/contact', contact.id]">{{ contact.name }}</a>
+    </li>
+  </ul>
+</div>

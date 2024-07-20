@@ -1,0 +1,44 @@
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Limit the width of the table */
+    overflow: hidden; /* Hide any overflow content */
+  }
+  
+  .header-separator {
+    margin: 16px 0; /* Space above and below the separator row */
+    border-bottom: 1px solid #e0e0e0; /* Light gray line for separation */
+  }
+  
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0; /* Light gray line for separation */
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    white-space: nowrap; /* Prevent label text from wrapping */
+  }
+  
+  .detail-value {
+    text-align: right; /* Align values to the right */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Add ellipsis for overflow content */
+    white-space: nowrap; /* Prevent value text from wrapping */
+  }
+  
+  .contact-details p {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .back-button-container {
+    margin-top: 16px; /* Space above the button */
+    text-align: center; /* Center align the button */
+  }
+  
+  mat-raised-button {
+    margin: 0;
+  }
+  
